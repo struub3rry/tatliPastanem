@@ -1,5 +1,5 @@
 # TATLI PASTANEM
-Yaptığım ilk websitesi.
+Yaptığım ilk websitesi. Ahi Evran Üniversitesi birinci sınıf, web tasarımları dersi için 20 puan değerindeki final ödevimdir.
 
 ## Proje Hakkında
 Bu proje, HTML, CSS ve JavaScript kullanarak yapılmış basit bir web sitesi örneğidir. 
