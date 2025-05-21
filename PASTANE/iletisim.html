@@ -1,0 +1,133 @@
+<!-- iletisim.html -->
+<!DOCTYPE html> <!-- HTML5 belgesi olduğunu belirtir -->
+<html lang="tr"> <!-- Sayfa dili Türkçe olarak ayarlandı -->
+<head>
+    <meta charset="UTF-8"> <!-- Karakter seti UTF-8 olarak ayarlandı (Türkçe karakterler için önemli) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyum için viewport ayarı -->
+    <title>İletişim | Tatlı Pastanem</title> <!-- Tarayıcı sekmesinde gözükecek sayfa başlığı -->
+
+    <!-- Bootstrap CSS dosyasının CDN'den yüklenmesi, hazır stil kütüphanesi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+   <!-- Yerel CSS dosyanız -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts - Özel yazı tiplerini kullanmak için bağlantılar -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Sayfanın üst kısmı, başlık ve navigasyon bar -->
+    <header class="pastane-header text-center p-4"> <!-- Merkezi hizalanmış, padding 4 birim -->
+        <h1 id="tatliPastanem" class="display-4">Tatlı Pastanem</h1> <!-- Büyük başlık (Bootstrap display-4) -->
+        <nav class="pastane-nav">
+            <a href="index.html" class="mx-3">Ana Sayfa</a> <!-- Ana sayfa linki, yatayda margin -->
+            <a href="iletisim.html" class="mx-3">İletişim</a> <!-- İletişim sayfası linki -->
+        </nav>
+    </header>
+
+    <!-- Sayfanın ana içerik alanı, Bootstrap container ile ortalanmış ve margin-top ile boşluk bırakılmış -->
+    <div class="container mt-5">
+        <h2 id="iletisimBaslik" class="text-center mb-4">Bize Ulaşın</h2> <!-- Ortalanmış alt başlık -->
+
+        <!-- İletişim formu, gönderildiğinde formGonderildi() fonksiyonu çalışacak -->
+       <form id="iletisimForm">
+    <!-- Ad alanı -->
+    <div class="mb-3">
+        <label for="ad" class="form-label">Adınız</label>
+        <input type="text" class="form-control" id="ad" name="ad" required>
+    </div>
+
+    <!-- Soyad alanı -->
+    <div class="mb-3">
+        <label for="soyad" class="form-label">Soyadınız</label>
+        <input type="search" class="form-control" id="soyad" name="soyad" required>
+    </div>
+
+
+    <!-- Email alanı -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <!-- Telefon alanı -->
+    <div class="mb-3">
+        <label for="tel" class="form-label">Telefon</label>
+        <input type="tel" class="form-control" id="tel" name="tel">
+    </div>
+
+    <!-- Doğum Tarihi alanı -->
+    <div class="mb-3">
+        <label for="dogumtarihi" class="form-label">Doğum Tarihi</label>
+        <input type="date" class="form-control" id="dogumtarihi" name="dogumtarihi">
+    </div>
+
+    <!-- Numara alanı -->
+    <div class="mb-3">
+        <label for="yas" class="form-label">Yaşınız</label>
+        <input type="number" class="form-control" id="yas" name="yas">
+    </div>
+
+    <!-- Web sitesi alanı -->
+    <div class="mb-3">
+        <label for="website" class="form-label">Web Siteniz</label>
+        <input type="url" class="form-control" id="website" name="website">
+    </div>
+
+    <!-- Şifre alanı -->
+    <div class="mb-3">
+        <label for="sifre" class="form-label">Şifre</label>
+        <input type="password" class="form-control" id="sifre" name="sifre">
+    </div>
+
+    <!-- Renk seçici -->
+    <div class="mb-3">
+        <label for="renk" class="form-label">Favori Renk</label>
+        <input type="color" class="form-control form-control-color" id="renk" name="renk" value="#00ff00" title="Favori renginizi seçin">
+    </div>
+
+    <!-- Memnuniyet oranı -->
+    <div class="mb-3">
+        <label for="memnuniyet" class="form-label">Memnuniyet Oranı</label>
+        <input type="range" class="form-range" id="memnuniyet" name="memnuniyet" min="0" max="100">
+    </div>
+
+    <!-- Mesaj alanı -->
+    <div class="mb-3">
+        <label for="mesaj" class="form-label">Mesajınız</label>
+        <textarea class="form-control" id="mesaj" name="mesaj" rows="4" required></textarea>
+    </div>
+
+    <!-- Cinsiyet seçimi -->
+    <div class="mb-3">
+        <label for="cinsiyet" class="form-label">Cinsiyet</label>
+        <select class="form-select" id="cinsiyet" name="cinsiyet">
+            <option value="">Seçiniz</option>
+            <option value="erkek">Erkek</option>
+            <option value="kadin">Kadın</option>
+            <option value="diger">Diğer</option>
+        </select>
+    </div>
+
+    <!-- Gönder butonu -->
+    <button type="submit" class="btn btn-success">Gönder</button>
+</form>
+
+    </div>
+
+    <!-- Sayfa alt kısmı, koyu arka plan, beyaz yazı, ortalanmış -->
+    
+    <br>
+    <br>
+    
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Tatlı Pastanem</p> <!-- Telif hakkı bilgisi -->
+    </footer>
+
+    <!-- Harici JavaScript dosyasını çağırıyor, form işlemleri vb burada -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
